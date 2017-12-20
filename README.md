@@ -22,7 +22,22 @@ Or install it yourself as:
     
 ## Requirements
 
-- ImageMagick 6.4.9 or later
+- ImageMagick 6.4.9 or later  
+  However, it is not currently compatible with version 7. (Maybe)
+  
+For version 7, you can use version 6 by installing it.  
+Please execute the following procedure.
+
+```
+$ brew uninstall imagemagick
+$ brew install imagemagick@6
+$ brew link --force imagemagick@6
+$ gem install rmagick -v '2.16.0'
+$ gem install lgtm_creator
+```
+
+FYI: [bundle install "rmagick" でインストールができない - Qiita](https://qiita.com/sho012b/items/362abe993248c686fcf4)
+
 
 ## Usage
 
